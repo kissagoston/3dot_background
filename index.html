@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="./style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="main">
@@ -27,5 +29,33 @@
 		<span style="--i:2;"></span>
 		<span style="--i:3;"></span>
 	</div>
+	
+	<div class="container">
+		<div class="box">
+			<h2 class="name">Rick & Morty</h2>
+			<a href="#" class="buy">Character</a>
+			<div class="circle"></div>
+			<img src="./img/logo.png" alt="logo">
+		</div>
+		<div class="box">
+			<h2 class="name">Rick</h2>
+			<a href="#" class="buy">Character</a>
+			<div class="circle"></div>
+			<img src="./img/Rick.png" alt="logo">
+		</div>
+		<div class="box">
+			<h2 class="name">Mortymer</h2>
+			<a href="#" class="buy">Character</a>
+			<div class="circle"></div>
+			<img src="./img/Morty.png" alt="logo">
+		</div>
+	</div>
+	<script src="vanilla-tilt.min.js"></script>
+	<script>
+		VanillaTilt.init(document.querySelectorAll(".box"), {
+			max: 25,
+			speed: 400
+		});
+	</script>
 </body>
 </html>
